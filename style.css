@@ -11,6 +11,12 @@
 
 h1 {
   font-family: "Norse";
+  color: white;
+  font-size: 8rem;
+}
+
+img {
+  height: 9rem;
 }
 
 body {
@@ -37,4 +43,13 @@ body {
 
 .italic {
   font-style: italic;
+}
+
+.logo {
+  height: 200px;
+  background-color: hsl(0, 0%, 0%, 0.4);
+  margin-top: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
