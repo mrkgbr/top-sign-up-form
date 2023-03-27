@@ -27,12 +27,21 @@ body {
 label {
   font-size: 0.7rem;
   margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 input:not([type="submit"]) {
   min-width: 300px;
   line-height: 1.5rem;
   font-size: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 3px;
+}
+
+input:not([type="submit"]):focus {
+  outline: none !important;
+  border: 1px solid #007bff;
+  box-shadow: 0 0 10px #719ece;
 }
 
 input[type="submit"] {
@@ -44,6 +53,11 @@ input[type="submit"] {
   border-radius: 10px;
 }
 
+input[type="submit"]:hover {
+  background-color: #596d48d3;
+  cursor: pointer;
+}
+
 .submit {
   margin-top: 30px;
   margin-left: 40px;
@@ -51,6 +65,7 @@ input[type="submit"] {
 
 .form-block {
   margin: 2rem 0;
+  padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 5px;
   background-color: white;
 }
@@ -90,6 +105,7 @@ input[type="submit"] {
   padding-top: 50px;
   flex: 2;
   background-color: rgba(227, 227, 227, 0.3);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .italic {
@@ -99,7 +115,7 @@ input[type="submit"] {
 .logo {
   height: calc(75px + 10vw);
   background-color: hsl(0, 0%, 0%, 0.4);
-  margin-top: 25vh;
+  margin-top: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,4 +128,38 @@ input[type="submit"] {
 .log-in {
   color: #596d48;
   font-weight: bold;
+  text-decoration: none;
+}
+
+.log-in:hover {
+  color: #596d48d3;
+}
+
+input:invalid {
+  outline: none !important;
+  border: 1px solid #ff0000;
+  box-shadow: 0 0 10px #ce7171;
+}
+
+#pwd-feedback {
+  position: relative;
+  top: 10px;
+}
+
+.error {
+  color: red;
+}
+
+.match {
+  color: green;
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    flex-direction: column;
+  }
+  .logo {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
 }

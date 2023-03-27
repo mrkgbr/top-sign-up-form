@@ -27,7 +27,7 @@
         <h2 class="top-text">
           You <span class="italic">know</span> you want to.
         </h2>
-        <form action="#" method="post">
+        <form action="index.html" method="post">
           <div class="form-block">
             <h2 class="form-header">Let's do this!</h2>
             <div class="form-container">
@@ -49,20 +49,35 @@
               </div>
               <div class="inputs">
                 <label for="pwd">PASSWORD </label>
-                <input type="password" name="pwd" id="pwd" />
+                <input
+                  type="password"
+                  name="pwd"
+                  id="pwd"
+                  minlength="5"
+                  maxlength="12"
+                  placeholder="Min 5 and max 12 character."
+                  required
+                />
+                <span></span>
               </div>
               <div class="inputs">
                 <label for="confpwd">CONFIRM PASSWORD </label>
-                <input type="password" name="confpwd" id="confpwd" />
+                <input type="password" name="confpwd" id="confpwd" required />
+                <span id="pwd-feedback" class="error"
+                  >Password does not match!</span
+                >
               </div>
             </div>
           </div>
           <div class="submit">
-            <input type="submit" value="Create Account" />
-            <p>Already have an account? <span class="log-in">Log in</span></p>
+            <input id="btn" type="submit" value="Create Account" />
+            <p>
+              Already have an account? <a href="#" class="log-in">Log in</a>
+            </p>
           </div>
         </form>
       </div>
     </div>
+    <script src="scipt.js"></script>
   </body>
 </html>
