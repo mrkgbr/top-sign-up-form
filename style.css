@@ -24,6 +24,45 @@ body {
   padding: 0;
 }
 
+label {
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  min-width: 300px;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+input[type="submit"] {
+  margin-top: 20px;
+}
+
+.form-block {
+  margin: 2rem 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 5px;
+}
+
+.form-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  max-width: 900px;
+  position: relative;
+  left: 40px;
+  padding-bottom: 40px;
+}
+
+.form-header {
+  position: relative;
+  left: 40px;
+}
+
+.inputs {
+  display: flex;
+  flex-flow: column wrap;
+}
+
 .main {
   display: flex;
   height: 100vh;
@@ -36,8 +75,8 @@ body {
 }
 
 .right {
+  padding-top: 50px;
   flex: 2;
-  padding: 100px 50px;
 }
 
 .italic {
@@ -51,4 +90,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.top-text {
+  padding: 0 40px;
 }
