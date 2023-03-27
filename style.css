@@ -32,12 +32,11 @@ body {
 .left {
   background-image: url("Images/background.avif");
   background-size: cover;
-  flex-grow: 1;
-  min-width: 33%;
+  flex: 1;
 }
 
 .right {
-  flex-grow: 2;
+  flex: 2;
   padding: 100px 50px;
 }
 
@@ -48,7 +47,7 @@ body {
 .logo {
   height: calc(75px + 10vw);
   background-color: hsl(0, 0%, 0%, 0.4);
-  margin-top: 33%;
+  margin-top: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
