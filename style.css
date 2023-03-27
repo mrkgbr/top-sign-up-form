@@ -46,7 +46,7 @@ body {
 }
 
 .logo {
-  height: 200px;
+  height: calc(75px + 10vw);
   background-color: hsl(0, 0%, 0%, 0.4);
   margin-top: 33%;
   display: flex;
